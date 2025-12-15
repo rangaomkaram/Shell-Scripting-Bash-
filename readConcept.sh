@@ -2,6 +2,7 @@
 
 # Concept of read command 
 #Syntax : read 
+# this will  help to secure the passwords at CLI 
 
 echo "Please enter you pin number"
 read pin_number
