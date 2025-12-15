@@ -10,5 +10,5 @@ read pin_number
 echo "Please enter the text from interface without showing on the CLI"
 read -s HIDDEN_TEXT
 # not good to print -- but just to test
-echo "here is the hidden number or text is $HIDDEN_TEXT~"
+echo "here is the hidden number or text is $HIDDEN_TEXT"
 
