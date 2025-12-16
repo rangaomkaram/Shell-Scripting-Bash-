@@ -32,3 +32,4 @@ CLOSE_TIME=$(date +%s)
 REMAIN_TIME=$(($CLOSE_TIME - $BEGIN_TIME))
 
 echo "script after removal of & operator execution time : $REMAIN_TIME"
+# O/P : script after removal of & operator execution time : 10
