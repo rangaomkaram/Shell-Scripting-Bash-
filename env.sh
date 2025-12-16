@@ -9,4 +9,4 @@ echo "Explaining about the Environment Variables"
 # echo "${Shell_Env} here printing the content"
 echo "environmental Variable is: $ENV_VAR"
 
-# here when we are using export command at vim ./bashrc -> source ./bashrc
+# here when we are using export command at vim ./bashrc  add the env varaibles and then-> source ./bashrc
