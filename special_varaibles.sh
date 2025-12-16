@@ -25,4 +25,13 @@ sleep 5 & # & operator background
 
 echo "PID of the last command in background is : $!"
 
+# output are below :
+
+# Your Script name : special_varaibles.sh
+# Current Directory : /c/DEVOPS/MyRepos/Shell-Scripting-Bash-
+# Who is running the Script :
+# Home directory of User : /c/Users/omkar
+# Process Instance ID (PID) of the process : 820
+# PID of the last command in background is : 821
+
 
