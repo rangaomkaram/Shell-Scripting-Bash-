@@ -6,7 +6,7 @@
 
 
 
-DATE = $(date)
+DATE=$(date)
 
 echo "TimeStamp of Execution : $DATE"
 # o/p : TimeStamp of Execution : Tue, Dec 16, 2025 1:16:38 PM
