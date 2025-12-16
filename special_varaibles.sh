@@ -13,3 +13,16 @@ echo "All Variables or args can be passed to the script using command  : $* "
 echo "Your Script name : $0"
 # o/p : Your Script name : special_varaibles.sh
 
+# other special variable $PWD -> Current directory , $USER -> know the owner /user $HOME -> give home path , $$ -> PID of the process , $! -> PID of the last command in background
+# other cmd to know pid -> ps -ef | grep <process_name>
+
+echo "Current Directory : $PWD"
+echo "Who is running the Script : $USER"
+echo "Home directory of User : $HOME"
+echo "Process Instance ID (PID) of the process : $$"
+
+sleep 5 & # & operator background
+
+echo "PID of the last command in background is : $!"
+
+
