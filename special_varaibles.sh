@@ -11,3 +11,5 @@ echo "All Variables or args can be passed to the script using command  : $* "
 
 # To know your script name 
 echo "Your Script name : $0"
+# o/p : Your Script name : special_varaibles.sh
+
