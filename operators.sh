@@ -33,3 +33,12 @@
 # -z	String is empty (zero length)	      [ -z "$str" ]
 # -n	String is not empty (non-zero length)       	[ -n "$str" ]
 # =~	Matches a regular expression (Bash only, requires [[...]])	[[ "$str" =~ "pattern" ]]
+
+# Logical Operators
+
+
+# Operator 	Description	Example
+# &&	 Logical AND: True if both conditions are true	[ $a -gt 5 ] && [ $a -lt 10 ]
+# !	     Logical NOT: Inverts the condition's result	[ ! -f filename ]
+# -a	    AND (Bourne shell syntax within [ ])	[ $a -lt 20 -a $b -gt 100 ]
+# -o	     OR (Bourne shell syntax within [ ])	[ $a -lt 20 -o $b -gt 100 ]
