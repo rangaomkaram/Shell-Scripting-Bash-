@@ -19,9 +19,8 @@ if [ $NUMBER1 -lt 10 ]; then
     echo "given number $NUMBER1 is less than 10"
 fi
 
-EVEN= $(($NUMBER2 % 2))
 
-if [ $EVEN -eq 0 ]; then
+if [ $(($NUMBER2 % 2))-eq 0 ]; then
     echo "$NUMBER2 is even number"
 else
     echo "$NUMBER2 is odd number"
