@@ -16,12 +16,12 @@ NUMBER2=$2
 NUMBER3=$3
 
 if [ $NUMBER1 -lt 10 ]; then
-    echo "given number  $NUMBER1 is lessthan 10"
+    echo "given number $NUMBER1 is less than 10"
 fi
 
 EVEN= $NUMBER2 % 2
 
-if [ $EVEN -eq 0 ];then
+if [ $EVEN -eq 0 ]; then
     echo "$NUMBER2 is even number"
 else
     echo "$NUMBER2 is odd number"
@@ -30,9 +30,9 @@ fi
 # prime , composite neither prime or composite
 ## && -> Logical AND: True if both conditions are true	[ $a -gt 5 ] && [ $a -lt 10 ]
 
-if [ [ $(($NUMBER3 % 2) -eq 1) ] &&  [ $($NUMBER3 -gt 1) ] ]; then
+if [ [ $(($NUMBER3 % 2)) -eq 1 ] &&  [ $($NUMBER3 -gt 1) ] ]; then
     echo " ${NUMBER3} is prime number"
-elif [ [ $(($NUMBER3 % 2) -eq 0) ] || [ $($NUMBER3 -eq 2) ] ] ; then
+elif [ [ $(($NUMBER3 % 2)) -eq 0 ] || [ $($NUMBER3 -eq 2) ] ]; then
     echo "$NUMBER3 is composite Number"
 else
     echo "$NUMBER3 is Neither Prime nor Composite"
