@@ -29,9 +29,11 @@ fi
 # prime , composite neither prime or composite
 ## && -> Logical AND: True if both conditions are true	[ $a -gt 5 ] && [ $a -lt 10 ]
 
-if [ [ $(($NUMBER3 % 2)) -eq 1 ] &&  [ "$NUMBER3" -gt 1 ] ]; then
-    echo " ${NUMBER3} is prime number"
-elif [ [ $(($NUMBER3 % 2)) -eq 0 ] || [ "$NUMBER3" -eq 2 ] ]; then
+# if [ [ $((NUMBER3 % 2)) -eq 1 ] &&  [ "$NUMBER3" -gt 1 ] ]; then
+#     echo " ${NUMBER3} is prime number"
+if { [ $((NUMBER3 % 2)) -eq 1 ] && [ "$NUMBER3" -gt 1 ]; } || [ "$NUMBER3" -eq 2 ]; then
+   echo "${NUMBER3} is prime number"
+elif [ [ $((NUMBER3 % 2)) -eq 0 ] || [ "$NUMBER3" -ne 2 ] ]; then
     echo "$NUMBER3 is composite Number"
 else
     echo "$NUMBER3 is Neither Prime nor Composite"
